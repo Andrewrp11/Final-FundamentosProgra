@@ -1,0 +1,9 @@
+int PC(const int c[], int cartas) 
+{
+    int total = 0;
+    for (int i = 0; i < cartas; ++i)
+    {
+        total += c[i];
+    }
+    return 0;
+}
