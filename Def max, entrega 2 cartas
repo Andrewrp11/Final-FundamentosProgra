@@ -1,0 +1,12 @@
+    const int max_cartas = 10;
+    int c[njugadores][max_cartas] = {0};
+    int n_cartas[njugadores] = {0};
+
+    for (int i = 0; i < njugadores; ++i)
+    {
+        c[i][n_cartas[i]++] = SCarta();
+        c[i][n_cartas[i]++] = SCarta();
+    }
+
+    char opcion;
+    bool Planta[njugadores] = {false};
