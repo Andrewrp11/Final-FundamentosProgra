@@ -1,0 +1,5 @@
+ c[i][n_cartas[i]++] = SCarta();
+                if (cPuntaje(c[i], n_cartas[i]) > 21)
+                {
+                    cout << "Te has pasado de 21. ¡Perdiste!" << endl;
+                    Planta[i] = true;
