@@ -1,0 +1,13 @@
+int mpuntaje = 0;
+string ganador = "Nadie";
+
+for (int i = 0; i < njugadores; ++i)
+{
+    int puntaje_actual = cPuntaje(c[i], n_cartas[i]);
+
+    if (puntaje_actual <= 21 && puntaje_actual > mpuntaje)
+    {
+        mpuntaje = puntaje_actual;
+        ganador = nombres[i];
+    }
+}
