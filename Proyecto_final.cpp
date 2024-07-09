@@ -105,7 +105,7 @@ int main()
     cout << "El ganador es: " << ganador << " con " << mpuntaje << " puntos." << endl << endl; //Ganador
 
     cout << "Creadores: " << "Andre Vladimir Romero Puente - Carnet 00061624" << endl; //Creadores
-    cout << "Creadores: " << "Axell Alejandro Giron Posada - Carnet 00134424" << endl;
+    cout << "Axell Alejandro Giron Posada - Carnet 00134424" << endl;
     return 0;
 
 }
