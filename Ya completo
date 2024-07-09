@@ -1,0 +1,26 @@
+for (int i = 0; i < njugadores; ++i)
+    {
+        cout << "Turno de " << nombres[i] << ":" << endl;
+        while (!Planta[i])
+        {
+            cout << "Tus c: ";
+            mCartas(c[i], n_cartas[i]);
+
+            cout << "Deseas pedir una carta (p) o plantarte (s)? ";
+            cin >> opcion;
+
+            if (opcion == 'p')
+            {
+                c[i][n_cartas[i]++] = SCarta();
+                if (cPuntaje(c[i], n_cartas[i]) > 21)
+                {
+                    cout << "Te has pasado de 21. ¡Perdiste!" << endl;
+                    Planta[i] = true;
+                }
+            }
+            else if (opcion == 's')
+            {
+                Planta[i] = true;
+            }
+        }
+    }
