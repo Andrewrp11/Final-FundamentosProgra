@@ -1,0 +1,4 @@
+int SCarta()
+{
+    return rand() % 10 + 1;
+}
